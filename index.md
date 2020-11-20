@@ -1,8 +1,6 @@
-## Welcome to GitHub Pages
+## Welcome to my first blog
 
-You can use the [editor on GitHub](https://github.com/wrednybarteK/blog/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
-
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+Witam, na moim blogu na którym będzie może coś ciekawego a może nic interesującego z administrowania serwerami
 
 ### Markdown
 
