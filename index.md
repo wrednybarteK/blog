@@ -2,13 +2,9 @@
 
 Witam, na moim blogu na którym będzie może coś ciekawego a może nic interesującego z administrowania serwerami
 
-### Markdown
+### Menu
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```Menu
-
--
+[monitoring](https://wrednybartek.github.io/blog/monitoring)
 
 ### Support or Contact
 
