@@ -1,4 +1,4 @@
-## Welcome to my first blog
+## Witam na moim blogu !
 
 Witam, na moim blogu na którym będzie może coś ciekawego a może nic interesującego z administrowania serwerami
 
