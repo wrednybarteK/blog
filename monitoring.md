@@ -29,9 +29,7 @@ docker-compose exec -T elasticsearch bin/elasticsearch-setup-passwords auto --ba
 5. Podmieniamy hasła które zostały wygenerowane 
 ```markdown
 elasticsearch.username: kibana_system w kibana/config/kibana.yml
-
 xpack.monitoring.elasticsearch.username: logstash_system w logstash/config/logstash.yml
-
 podmieniamy hasło dla usera elastic w logstash/pipeline/logstash.conf
 ```
 
@@ -39,3 +37,7 @@ podmieniamy hasło dla usera elastic w logstash/pipeline/logstash.conf
 ```markdown
 docker-compose restart kibana logstash
 ```
+
+Teraz pod http://twojeip:5601 powinno pojawić się logowanie do kibany w którym podajemy login elastic i hasło
+
+Można już kożystać z podstawowych funkcji ELK, ale aby możliwe było używanie niektorych opcji w SIEM-ie potrzeba ustawienia certyfikatów na backendzie 
