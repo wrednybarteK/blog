@@ -14,3 +14,28 @@ Więc mój stack do monitorwania wygląda nastepująco Zabbix + ELK + Grafana
 ### 1. Elasticstack
 
 Wykożystałem obraz dockerowy z https://github.com/deviantony/docker-elk 
+
+
+1. Pobieramy z gita obraz dla dockera :
+```markdown
+git clone https://github.com/deviantony/docker-elk.git
+```
+2. W pliku .env możemy wybrać wersję która ma się ściągnąć
+3. Odpalamy docker-compose up -d
+4. Następnie odpalamy skrypt który poustawia hasła do całego stacka 
+```markdown
+docker-compose exec -T elasticsearch bin/elasticsearch-setup-passwords auto --batch
+```
+5. Podmieniamy hasła które zostały wygenerowane 
+```markdown
+elasticsearch.username: kibana_system w kibana/config/kibana.yml
+
+xpack.monitoring.elasticsearch.username: logstash_system w logstash/config/logstash.yml
+
+podmieniamy hasło dla usera elastic w logstash/pipeline/logstash.conf
+```
+
+6. Resetartujemy ELK
+```markdown
+docker-compose restart kibana logstash
+```
